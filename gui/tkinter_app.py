@@ -1,8 +1,12 @@
 import tkinter as tk
 from tkinter import simpledialog, messagebox
 import requests
+import os
+from dotenv import load_dotenv
 
-BASE_URL = "http://127.0.0.1:5000/media"
+load_dotenv()
+
+BASE_URL = os.getenv("BASE_URL")
 
 def create_media():
     title = simpledialog.askstring("Create Media", "Enter media title:")
