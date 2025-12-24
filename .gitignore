@@ -25,4 +25,8 @@ result
 
 # ---- OS ----
 .DS_Store
-Thumbs.db
+Thumbs.dbmedia_type
+shell.nix
+
+# ---- DATA ----
+*.json
