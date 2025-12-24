@@ -7,7 +7,7 @@ bp = Blueprint("media", __name__, url_prefix="/media")
 def list_media():
     media = MediaService.list_media()
     return jsonify([
-        {"id": m.id, "title": m.title, "type": m.type}
+        {"id": m.id, "title": m.title, "media_type": m.media_type}
         for m in media
     ])
 

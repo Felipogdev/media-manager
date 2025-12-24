@@ -4,6 +4,5 @@ pkgs.mkShell {
   buildInputs = [
     pkgs.python310Full
     pkgs.python310Packages.tkinter
-    pkgs.sqlite
   ];
 }

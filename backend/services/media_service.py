@@ -11,6 +11,5 @@ class MediaService:
     def create_media(title, media_type):
         if not title:
             raise ValueError("Title is required")
-
-        media = Media(title=title, type=media_type)
+        media = Media(id=None, title=title, media_type=media_type)
         return MediaRepository.save(media)
